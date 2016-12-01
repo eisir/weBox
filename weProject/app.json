@@ -1,0 +1,44 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/demo/demo",
+    "pages/game/game",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "Hello，Jeyre",
+    "navigationBarTextStyle":"#eee"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "images/icon/home.png",
+      "selectedIconPath": "images/icon/home_select.png"
+    },
+    {
+      "pagePath": "pages/game/game",
+      "text": "game",
+      "iconPath": "images/icon/game.png",
+      "selectedIconPath": "images/icon/game_select.png"
+    },
+    {
+      "pagePath": "pages/demo/demo",
+      "text": "demo",
+      "iconPath": "images/icon/demo.png",
+      "selectedIconPath": "images/icon/demo_select.png"
+    },
+    {
+      "pagePath": "pages/logs/logs",
+      "text": "日志",
+      "iconPath": "images/icon/logs.png",
+      "selectedIconPath": "images/icon/logs_select.png"
+    }
+    ],
+    "borderStyle": "white",
+    "backgroundColor":"#fafafa",
+    "selectedColor": "#f00"
+  }
+}

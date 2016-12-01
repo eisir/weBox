@@ -1,0 +1,8 @@
+<template name="firstTemp">
+    <view>
+        title: {{title}}
+        content:{{cont}}
+    </view>
+</template>
+<template is="firstTemp" data="{{...firstDate}}"></template>
+<view>{{a+b}}+{{b}}1</view>

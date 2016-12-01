@@ -1,0 +1,11 @@
+<view>
+  <image style="width: 100%; background-color: #eeeeee;" mode="aspectFill" src="{{src}}"></image>
+  <image style="width: 100%; background-color: #eeeeee;" mode="aspectFit" src="{{src}}"></image>
+  <image style="width: 100%; background-color: #eeeeee;" mode="scaleToFill" src="{{src}}"></image>
+</view>
+<view>
+  <text>test data:{{text}}</text>
+</view>
+<view>
+  <input bindinput="{{text}}" placeholder="输入内容" />
+</view>
