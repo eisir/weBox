@@ -9,5 +9,5 @@
     <text class="user-motto">{{motto}}</text>
   </view>
   <button type="primary" size="{{defaultSize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}" bindtap="setPlain" hover-class="other-button-hover"> default </button>
-  <text class="user-motto">1</text>
+  <view bind><navigator url="../pages/demo/demo" hover-class="navigator-hover">跳转到新页面</navigator></view>
 </view>

@@ -6,3 +6,4 @@
 </template>
 <template is="firstTemp" data="{{...firstDate}}"></template>
 <view>{{a+b}}+{{b}}1</view>
+<view wx:for="{{[1,2,3,4,5]}}" hidden="{{false}}">{{item}}</view>
