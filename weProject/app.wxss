@@ -8,3 +8,9 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 } 
+input{
+  border:1px solid #ddd;
+}
+page{
+  padding: 10rpx;
+}

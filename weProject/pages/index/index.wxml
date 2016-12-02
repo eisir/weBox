@@ -11,3 +11,4 @@
   <button type="primary" size="{{defaultSize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}" bindtap="setPlain" hover-class="other-button-hover"> default </button>
   <view bind><navigator url="../pages/demo/demo" hover-class="navigator-hover">跳转到新页面</navigator></view>
 </view>
+

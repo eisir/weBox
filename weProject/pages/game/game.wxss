@@ -1,11 +1,19 @@
-/* pages/game/game.wxss */
-
-/** wxss **/
-/** 修改默认的navigator点击态 **/
-.navigator-hover {
-    color:blue;
+.button-hover {
+  background-color: red;
 }
-/** 自定义其他点击态样式类 **/
-.other-navigator-hover {
-    color:red;
+/** 添加自定义button点击态样式类**/
+.other-button-hover {
+  background-color: blue;
+}
+.password{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10rpx;
+}
+.password input{
+  box-sizing: border-box;
+  width: 100rpx;
+  height: 100rpx;
+  padding: 10rpx;
+  text-align: center;
 }
