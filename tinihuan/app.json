@@ -1,0 +1,13 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",  
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "替你还",
+    "navigationBarTextStyle":"#fff",
+    "enablePullDownRefresh":true
+  }
+}

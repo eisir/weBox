@@ -1,0 +1,15 @@
+/**app.wxss**/
+.container {
+  padding: 20rpx;
+  box-sizing: border-box;
+  line-height: 1.5;
+
+} 
+input{
+  padding: 10rpx;
+  border: 1px solid #ddd;
+  height: 1.5rem;
+}
+view{
+  font-size:1rem;
+}

@@ -1,0 +1,15 @@
+.input-el{
+  display: flex;
+  align-content: center;
+  border: 1px solid #ddd;
+  line-height: 1.5;
+  padding: 10rpx;
+  font-size: 1rem;
+}
+.input-el input{
+  flex:1;
+  border: none;
+  padding: 0;
+  height: 1.5rem;
+  background-color: #f00;
+}

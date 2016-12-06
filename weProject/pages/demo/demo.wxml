@@ -6,6 +6,12 @@
   <view><icon type="download" size="90" color="#f0ab0f"></icon></view>
   <progress percent="20" show-info active />
 </template>
+<view>
+    <navigator url="../form/form" hover-class="navigator-hover">
+      To form</navigator>
+     <navigator url="navigate?title=navigate" hover-class="navigator-hover">跳转到新页面</navigator>
+  <navigator url="redirect?title=redirect" redirect hover-class="other-navigator-hover">在当前页打开</navigator>
+</view>
 <template is="firstTemp" data="{{...firstDate}}"></template>
 <view>{{a+b}}+{{b}}1</view>
 <button bindtap="showToast">showToast</button>
@@ -15,13 +21,10 @@
 <view wx:for="{{numberArray}}"  wx:key="*this">{{item}}</view>
 <block wx:for="{{[1,2,3,4,5]}}" wx:key="*this">{{item}}</block>
 <view>
- <button type="default" size="{{defaultSize}}" loading="{{loading}}" plain="{{plain}}"
-        disabled="{{disabled}}" bindtap="default" hover-class="other-button-hover"> default </button>
-<button type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}"
-        disabled="{{disabled}}" bindtap="primary"> primary </button>
-<button type="warn" size="{{warnSize}}" loading="{{loading}}" plain="{{plain}}"
-        disabled="{{disabled}}" bindtap="warn"> warn </button>
-<button bindtap="setDisabled">点击设置以上按钮disabled属性</button>
-<button bindtap="setPlain">点击设置以上按钮plain属性</button>
-<button bindtap="setLoading">点击设置以上按钮loading属性</button>
+  <switch wx:for="{{objectArray}}" wx:key="unique" style="display: block;"> {{item.id}} </switch>
+  <button bindtap="switch"> Switch </button>
+  <button bindtap="addToFront"> Add to the front </button>
+
+  <switch wx:for="{{numberArray}}" wx:key="*this" style="display: block;"> {{item}} </switch>
+  <button bindtap="addNumberToFront"> Add to the front </button>
 </view>

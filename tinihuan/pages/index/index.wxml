@@ -1,0 +1,9 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="h1">填写申请金额</view>
+  <view class="input-el">
+    <label for="">金额:</label>
+    <input id="" type="text"/>
+  </view>
+  <view class="tip"></view>
+</view>
