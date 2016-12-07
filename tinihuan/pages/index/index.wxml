@@ -1,9 +1,47 @@
 <!--index.wxml-->
 <view class="container">
-  <view class="h1">填写申请金额</view>
-  <view class="input-el">
-    <label for="">金额:</label>
-    <input id="" type="text"/>
+  <view class="main">    
+    <view class="h1">填写申请金额</view>
+    <view class="input-el">
+      <label for="input-apply">金额:</label>
+      <input bindblur="blurInput" id="input-apply" type="text" placeholder="最低1000元，最高50000元" placeholder-class="placeholder"/>
+      <span>￥</span>
+    </view>
+    <view class="tip">温馨提示：实际到账金额以审批结果为准</view>
+    <view class="hr"></view>
+    <view class="h1">申请周期</view>
+    <view class="times" wx:if="{{times.length > 1}}">
+      <view
+        wx:for="{{times}}"
+        wx:key="{{index}}"
+        data-index="{{index}}"
+        class="{{item.class}}"
+        bindtap="tapTime"
+        >
+        {{item.text}}
+      </view>
+    </view>
+    <view class="res-part">
+      <view>
+        <text class="label">服 务 费</text>
+        <text class="right">200.00元</text>
+      </view>
+      <view>
+        <text class="label">到账金额</text>
+        <text class="right">9800.00元</text>
+      </view>
+      <view>
+        <text class="label">应还金额</text>
+        <text class="right">10000元</text>
+      </view>
+      <view>
+        <text class="label">还 款 日</text>
+        <text class="right">2016年12月20日</text>
+      </view>
+    </view>
   </view>
-  <view class="tip"></view>
+  <view class="button-v">
+    <button bindtap="next">立即申请</button>
+  </view>
 </view>
+

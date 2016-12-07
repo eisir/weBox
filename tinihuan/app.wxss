@@ -1,15 +1,37 @@
 /**app.wxss**/
+/**
+ *  1rem==38rpx==19px
+ */
+page{
+  background-color: #eceff6;
+}
 .container {
-  padding: 20rpx;
   box-sizing: border-box;
   line-height: 1.5;
-
+  font-size: 32rpx;
 } 
+.main{  
+  background-color: #fff;
+  padding: 20rpx;
+}
+.container .h1{
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
 input{
   padding: 10rpx;
   border: 1px solid #ddd;
-  height: 1.5rem;
 }
-view{
-  font-size:1rem;
+.container .tip{
+  font-size: 0.8rem;
+  line-height: 1.6rem;
+  color: #999;
+}
+.hr{
+  height: 0;
+  border-bottom: 1rpx solid #ddd;
+  margin: 30rpx 0;
+}
+.placeholder{
+  color: #bbb;
 }

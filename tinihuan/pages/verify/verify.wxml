@@ -1,0 +1,28 @@
+<!--pages/verify/verify.wxml-->
+<view class="step-block step2">
+  <view class="step">
+    <view class="inner">
+      <progress percent="40" stroke-width="12" />
+      <view class="list">
+        <view><text>1</text></view>
+        <view><text>2</text></view>
+        <view><text>3</text></view>
+        <view><text>4</text></view>
+      </view>
+    </view>
+  </view>
+  <view class="titles">
+    <view>
+      拍照认证
+    </view>
+    <view>
+      个人信息
+    </view>
+    <view>
+      银行填写
+    </view>
+    <view>
+      提交申请
+    </view>
+  </view>
+</view>

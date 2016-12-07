@@ -1,0 +1,49 @@
+/* pages/verify/verify.wxss */
+.step-block{
+  background-color: #fff;
+}
+.step-block .step{
+  padding: 1rem 7.81% 0;  
+}
+.step-block .inner{
+  background-image: url(../../images/nav_back.png);
+  background-size: 100% 100%;
+  padding-top: 9.26%;
+  position: relative;
+  width: 100%;
+}
+.step-block .inner progress{
+  position: absolute;
+}
+.step-block .inner .list{
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  justify-content: space-between;
+}
+.step-block .inner .list view{
+  width: 9.26%;
+  text-align: center;
+  height: 100%;
+  line-height: 1.5rem;
+}
+
+.step-block .titles{
+  display: flex;
+  justify-content: space-between;
+  line-height: 2rem;
+}
+.step-block .titles view{
+  flex:1;
+  text-align: center;
+}
+
+.step1 .list wx-view:first-child{
+  background-image: url('../../images/empty_dot.png');
+
+}
+.step1 .list wx-view:first-child text{
+  display: none;
+}

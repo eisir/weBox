@@ -2,14 +2,54 @@
   display: flex;
   align-content: center;
   border: 1px solid #ddd;
-  line-height: 1.5;
   padding: 10rpx;
+  flex-direction: row;
   font-size: 1rem;
+  color: #666;
+}
+.input-el label{
+  line-height: 1.57rem;
 }
 .input-el input{
   flex:1;
   border: none;
   padding: 0;
-  height: 1.5rem;
-  background-color: #f00;
+  height: 60rpx;
+  padding-left: 20rpx;
+}
+.times{
+  display: flex;
+  justify-content: flex-start;
+}
+.times view{
+  padding: 0.5rem;
+  border: 1px solid #007aff;
+  background-color: #fff;
+  margin-right: 0.4rem;
+  /*border-radius: 6rpx;*/
+}
+.times view.selected{
+  background-color: #007aff;
+  color: #fff;
+}
+.button-v{
+  margin-top: 1rem;
+  padding: 20rpx;
+}
+.button-v button{
+  background-color: #007aff;
+  color: #fff;
+}
+.res-part{
+  border: 1px solid #007aff;
+  margin-top: 20rpx;
+  padding: 20rpx;
+  font-size: 0.8rem;
+}
+.res-part view .label{
+  width: 5rem;
+  display: inline-block;
+}
+.res-part view .right{
+  float: right;
 }

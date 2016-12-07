@@ -3,13 +3,45 @@
 var app = getApp()
 Page({
   data: {
-    motto: 'Hello World',
-    userInfo: {}
+    motto: '',
+    times:[{
+      class:"",
+      text: "1周",
+      ratio: 0.012
+    },
+    {
+      class:"",
+      text: "2周",      
+      ratio: 0.02
+    },
+    {
+      class:"",
+      text: "3周",
+      ratio: 0.035
+    },
+    {
+      class:"",
+      text: "4周",
+      ratio: 0.04
+    }],
+    infoShow:''
   },
   //事件处理函数
-  bindViewTap: function() {
+  tapTime: function(e) {
+    this.data.times.forEach((n,index,arr)=>{      
+        this.data.times[index].class=""      
+    })
+    this.data.times[e.currentTarget.dataset.index].class='selected'
+    this.setData({
+      times : this.data.times
+    })
+  },
+  blurInput: function(){
+
+  },
+  next: function(){
     wx.navigateTo({
-      url: '../logs/logs'
+      url: '../verify/verify'
     })
   },
   onLoad: function () {
