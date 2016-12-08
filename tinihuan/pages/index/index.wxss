@@ -32,14 +32,7 @@
   background-color: #007aff;
   color: #fff;
 }
-.button-v{
-  margin-top: 1rem;
-  padding: 20rpx;
-}
-.button-v button{
-  background-color: #007aff;
-  color: #fff;
-}
+
 .res-part{
   border: 1px solid #007aff;
   margin-top: 20rpx;
@@ -49,7 +42,4 @@
 .res-part view .label{
   width: 5rem;
   display: inline-block;
-}
-.res-part view .right{
-  float: right;
 }

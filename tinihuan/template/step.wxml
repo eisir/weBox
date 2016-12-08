@@ -1,0 +1,29 @@
+<template name="step">
+  <view class="step-block step{{index}}">
+    <view class="step">
+      <view class="inner">
+        <view class="progress"></view>
+        <view class="list">
+          <view class="num_1"><text>1</text></view>
+          <view class="num_2"><text>2</text></view>
+          <view class="num_3"><text>3</text></view>
+          <view class="num_4"><text>4</text></view>
+        </view>
+      </view>
+    </view>
+    <view class="titles">
+      <view class="title_1">
+        拍照认证
+      </view>
+      <view class="title_2">
+        个人信息
+      </view>
+      <view class="title_3">
+        银行填写
+      </view>
+      <view class="title_4">
+        提交申请
+      </view>
+    </view>
+  </view>
+</template>

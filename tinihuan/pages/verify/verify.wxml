@@ -1,28 +1,53 @@
 <!--pages/verify/verify.wxml-->
-<view class="step-block step2">
-  <view class="step">
-    <view class="inner">
-      <progress percent="40" stroke-width="12" />
-      <view class="list">
-        <view><text>1</text></view>
-        <view><text>2</text></view>
-        <view><text>3</text></view>
-        <view><text>4</text></view>
+<import src="../../template/step.wxml" />
+
+<!-- step -->
+<view class="container">
+  <template is="step" data="{{index:1}}"></template>
+
+  <view class="tips">
+    请上传本人身份证照片，确保周围环境光写充足，拍照不要晃动，以便快速审批
+  </view>
+
+  <view class="main">
+    <view class="title">
+      请按照图示要求上传您的身份证照片
+      <view class="error fr">
+        <icon type="info_circle" color="#fff" size="20"/>错误示例
       </view>
     </view>
+    <view class="cont">
+      <block wx:for="{{contList}}" wx:key="index">      
+        <view class="eg-img" bindtap="showEg" data-egbig="{{item.egBig}}">
+          <image src="{{item.egSrc}}"></image>
+        </view>
+        <view class="take-img" bindtap="takePhoto" data-index="{{index}}">
+          <image wx:if="{{item.img}}" src="{{item.img}}"></image>
+          <view class="txt" wx:if="{{!item.img}}">
+            <view>点击上传</view>
+            <view>{{item.text}}</view>
+          </view>
+        </view>
+      </block>    
+    </view>
+    
   </view>
-  <view class="titles">
-    <view>
-      拍照认证
+  <view class="button-v">
+    <button bindtap="next">立即申请</button>
+  </view>
+</view>
+<view
+  class="layerWrap"
+  wx:if="{{layerOptions.show}}"
+  data-id="{{layerOptions.id}}"
+  bindtap="layerEvent">
+  <view class="layer">
+    <view class="title">
+      身份证头像照拍摄示例图
     </view>
-    <view>
-      个人信息
-    </view>
-    <view>
-      银行填写
-    </view>
-    <view>
-      提交申请
+    <image src="{{layerOptions.imgSrc}}"></image>
+    <view class="tips">
+      tips
     </view>
   </view>
 </view>

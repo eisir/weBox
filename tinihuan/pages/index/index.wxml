@@ -24,19 +24,19 @@
     <view class="res-part">
       <view>
         <text class="label">服 务 费</text>
-        <text class="right">200.00元</text>
+        <text class="fr">200.00元</text>
       </view>
       <view>
         <text class="label">到账金额</text>
-        <text class="right">9800.00元</text>
+        <text class="fr">9800.00元</text>
       </view>
       <view>
         <text class="label">应还金额</text>
-        <text class="right">10000元</text>
+        <text class="fr">10000元</text>
       </view>
       <view>
         <text class="label">还 款 日</text>
-        <text class="right">2016年12月20日</text>
+        <text class="fr">2016年12月20日</text>
       </view>
     </view>
   </view>

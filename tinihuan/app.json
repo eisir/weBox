@@ -9,6 +9,6 @@
     "navigationBarBackgroundColor": "#000",
     "navigationBarTitleText": "替你还",
     "navigationBarTextStyle":"#fff",
-    "enablePullDownRefresh":true
+    "enablePullDownRefresh":false
   }
 }
