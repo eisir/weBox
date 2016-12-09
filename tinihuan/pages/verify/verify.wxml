@@ -18,7 +18,7 @@
     </view>
     <view class="cont">
       <block wx:for="{{contList}}" wx:key="index">      
-        <view class="eg-img" bindtap="showEg" data-egbig="{{item.egBig}}">
+        <view class="eg-img" bindtap="showEg" data-egbig="{{item.egBig}}" data-index="{{index}}">
           <image src="{{item.egSrc}}"></image>
         </view>
         <view class="take-img" bindtap="takePhoto" data-index="{{index}}">
@@ -37,17 +37,22 @@
   </view>
 </view>
 <view
-  class="layerWrap"
-  wx:if="{{layerOptions.show}}"
+  class="layer-wrap"
+  hidden="{{!layerOptions.show}}"
   data-id="{{layerOptions.id}}"
   bindtap="layerEvent">
   <view class="layer">
     <view class="title">
-      身份证头像照拍摄示例图
+      {{layerOptions.texts[0]}}
     </view>
     <image src="{{layerOptions.imgSrc}}"></image>
-    <view class="tips">
-      tips
+    <view class="layer-tips">
+      <block wx:for="{{layerOptions.texts}}" wx:key="*this">
+        <view wx:if="{{index > 0}}">
+          {{item}}
+        </view>
+      </block>
     </view>
+    <view class="close" data-id="{{layerOptions.id}}">X</view>
   </view>
 </view>

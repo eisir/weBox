@@ -4,19 +4,21 @@
  */
 page{
   background-color: #eceff6;
+  font-family: arial;
 }
 .container {
   box-sizing: border-box;
   line-height: 1.5;
   font-size: 32rpx;
   padding-bottom: 20rpx;
+  font-size: .8rem;
 } 
 .main{  
   background-color: #fff;
   padding: 20rpx;
 }
 .container .h1{
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 2rem;
 }
 input{
@@ -27,6 +29,11 @@ input{
   font-size: 0.8rem;
   line-height: 1.6rem;
   color: #999;
+}
+.container .tips{
+  padding: 20rpx;
+  font-size: .8rem;
+  border-bottom: 1rpx solid #ddd;
 }
 .hr{
   height: 0;
@@ -40,6 +47,30 @@ input{
   float: right;
 }
 
+.input-el{
+  display: flex;
+  border: 1px solid #ddd;
+  padding: 10rpx;
+  flex-direction: row;
+  color: #666;
+  line-height: 1.5rem;
+  align-content: center;
+}
+.input-el label{
+  /*background-color: #fe0;*/
+}
+.input-el input{
+  flex:1;
+  border: none;
+  padding: 0;
+  height: 1.5rem;
+  /*background-color: #f00;*/
+  padding-left: .5rem;
+}
+.input-el text{
+  line-height: 1.4rem;
+}
+
 .button-v{
   margin-top: 1rem;
   padding: 20rpx;
@@ -48,6 +79,12 @@ input{
   background-color: #007aff;
   color: #fff;
 }
+
+.rem{
+  display: inline-block;
+  width: .8rem;
+}
+
 
 /**
  * step style

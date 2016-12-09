@@ -1,0 +1,108 @@
+<!--pages/personal/personal.wxml-->
+<import src="../../template/step.wxml" />
+
+<!-- step -->
+<view class="container">
+  <template is="step" data="{{index:2}}"></template>
+  <view class="space_line">
+  </view>
+  <view class="main">    
+    <view class="input-el">
+      <label>真实姓名</label>
+      <input type="text" placeholder="您的姓名" placeholder-class="placeholder"/>
+    </view>
+    <view class="input-el">
+      <label>身份证号</label>
+      <input type="idcard" maxlength="18" placeholder="18位号码" placeholder-class="placeholder"/>
+    </view>
+  </view>
+  <view class="space_line">
+  </view>
+  <view class="main">    
+    <view class="input-el">
+      <label>电子邮箱</label>
+      <input type="text" placeholder="填写电子邮箱" placeholder-class="placeholder"/>
+    </view>
+    <view class="input-el">
+      <label>居住城市</label>
+      <picker  bindchange="bindPickerChange" mode="selector" value="{{pickerIndex}}" range="{{citys}}">
+        <view>{{citys[pickerIndex]||"选择您的城市"}}</view>
+      </picker>
+    </view>
+    <view class="input-el">
+      <label>详细地址</label>
+      <input type="text" maxlength="18" placeholder="**路**小区**楼栋**房号" placeholder-class="placeholder"/>
+    </view>
+  </view>
+  <view class="space_line">
+  </view>
+  <view class="main">
+    <view class="input-el">
+      <label>单位全称</label>
+      <input type="text" placeholder="任职单位全称" placeholder-class="placeholder"/>
+    </view><view class="input-el">
+      <label>单位城市</label>
+      <picker  bindchange="bindPickerChange" mode="selector" value="{{pickerIndex}}" range="{{citys}}">
+        <view>{{citys[pickerIndex]||"选择您的城市"}}</view>
+      </picker>
+    </view>
+    <view class="input-el">
+      <label>单位地址</label>
+      <input type="text" placeholder="**路**小区**楼栋**室" placeholder-class="placeholder"/>
+    </view>
+    <view class="input-el tel-el">
+      <label>单位电话</label>
+      <input class="length_1" type="number" maxlength="4" placeholder="区号" placeholder-class="placeholder"/>
+      <text>—</text>
+      <input class="length_2" type="number" maxlength="8" placeholder="固定电话" placeholder-class="placeholder"/>
+      <text>—</text>
+      <input class="length_1" type="number" maxlength="6" placeholder="分机号" placeholder-class="placeholder"/>
+      <view class="space_flex1"></view>
+    </view>
+  </view>
+  <view class="space_line">
+  </view>
+  <view class="main">
+    <view class="input-el">
+      <label>亲属关系</label>
+      <picker  bindchange="bindPickerChange" mode="selector" value="{{relatives.index}}" range="{{relatives.arr}}">
+        <view>{{relatives.arr[relatives.index]||" "}}</view>
+      </picker>
+    </view><view class="input-el">
+      <label>姓名<text class="rem"></text><text class="rem"></text></label>
+      <input type="text" placeholder="" placeholder-class="placeholder"/>
+    </view>
+    <view class="input-el">
+      <label>手机号码</label>
+      <input type="number" placeholder="亲属手机号码" placeholder-class="placeholder"/>
+    </view>    
+  </view>
+  <view class="space_line">
+  </view>
+  <view class="main">
+    <view class="input-el">
+      <label>紧急联系</label>
+      <picker  bindchange="bindPickerChange" mode="selector" value="{{relatives.index}}" range="{{relatives.arr}}">
+        <view>{{relatives.arr[relatives.index]||" "}}</view>
+      </picker>
+    </view><view class="input-el">
+      <label>姓名<text class="rem"></text><text class="rem"></text></label>
+      <input type="text" placeholder="填写联系人姓名" placeholder-class="placeholder"/>
+    </view>
+    <view class="input-el">
+      <label>手机号码</label>
+      <input type="number" placeholder="填写联系人的手机号码" placeholder-class="placeholder"/>
+    </view>    
+  </view>
+  <view class="space_line">
+  </view>
+  <view class="main">
+    <view class="input-el">
+      <label>推荐人<text class="rem"></text></label>
+      <input type="number" placeholder="手机号码(选填)" placeholder-class="placeholder"/>
+    </view>   
+  </view>
+  <view class="button-v">
+    <button bindtap="next">立即申请</button>
+  </view>
+</view>

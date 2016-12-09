@@ -5,24 +5,44 @@ Page({
       egSrc:'../../images/backcard.jpg',
       egBig:'../../images/bigcard_2.jpg',
       text:"身份证头像照",
-      img:""
+      img:"",
+      layerText:[
+        "身份证头像照拍摄示例图",
+        "温馨提示：",
+        "1.拍摄时将身份证正面置于拍摄界面正中。",
+        "2.必须为本人身份证照片，真实有效，且内容清晰可辨。"
+      ]
     },
     {
       egSrc:'../../images/facecard.jpg',
       egBig:'../../images/bigcard_1.jpg',
       text:"身份证国徽照",
-      img:""
+      img:"",
+      layerText:[
+        "身份证国徽照拍摄示例图",
+        "温馨提示：",
+        "1.拍摄时将身份证正面置于拍摄界面正中。",
+        "2.必须为本人身份证照片，真实有效，且内容清晰可辨。"
+      ]
     },
     {
       egSrc:'../../images/catchcard.jpg',
       egBig:'../../images/bigcard_3.jpg',
       text:"手持身份证照",
-      img:""
+      img:"",
+      layerText:[
+        "申请人手持身份证合影拍摄示例图",
+        "温馨提示：",
+        "1.拍摄时保证环境光线充足，背景色为纯色。",
+        "2.被拍摄者五官清晰，无遮拦。",
+        "3.身份证资料清晰可辨"
+      ]
     }],
     layerOptions:{
       show:false,
       imgSrc:"",
-      id:""
+      id:"",
+      texts:[]
     }
   },
   takePhoto:function(e){
@@ -47,6 +67,7 @@ Page({
     this.data.layerOptions.show=true
     this.data.layerOptions.id=(new Date()).getTime()
     this.data.layerOptions.imgSrc=e.currentTarget.dataset.egbig
+    this.data.layerOptions.texts=this.data.contList[e.currentTarget.dataset.index].layerText
     this.setData({
       layerOptions : this.data.layerOptions
     })
@@ -57,6 +78,12 @@ Page({
     }
     this.setData({
       layerOptions : this.data.layerOptions
+    })
+    console.log(e);
+  },
+  next: function(){
+    wx.navigateTo({
+      url: '../personal/personal'
     })
   },
   onLoad:function(options){

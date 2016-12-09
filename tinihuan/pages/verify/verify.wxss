@@ -1,10 +1,5 @@
 /* pages/verify/verify.wxss */
 
-.tips{
-  padding: 20rpx;
-  font-size: .8rem;
-  border-bottom: 1rpx solid #ddd;
-}
 .main .title{
   font-size: .8rem;
   line-height: 2;
@@ -57,7 +52,7 @@
   color:#fff;
 }
 
-.layerWrap{
+.layer-wrap{
   position: fixed;
   top:0;
   left:0;
@@ -67,18 +62,33 @@
 }
 .layer{
   position: absolute;
-  top: 20%;
+  top: 10%;
   left: 50%;
-  width: 80%;
-  margin-left: -40%;
+  width: 90%;
+  margin-left: -45%;
   background-color: #fff;
+  padding: .5rem 0;
+  font-size: .8rem;
 
 }
 .layer image{
   width: 100%;
 }
 .layer .title{
-  height: 3rem;
-  line-height: 3rem;
+  height: 2rem;
+  line-height: 2rem;
   text-align: center;
+  font-size: 1rem;
+  /*font-weight: bold;*/
+}
+.layer .close{
+  position: absolute;
+  top: .5rem;
+  left: .5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.layer .layer-tips{
+  padding: 0 20rpx;
+  line-height: 2rem;
 }

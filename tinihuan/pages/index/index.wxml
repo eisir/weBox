@@ -5,7 +5,7 @@
     <view class="input-el">
       <label for="input-apply">金额:</label>
       <input bindblur="blurInput" id="input-apply" type="text" placeholder="最低1000元，最高50000元" placeholder-class="placeholder"/>
-      <span>￥</span>
+      <text>￥</text>
     </view>
     <view class="tip">温馨提示：实际到账金额以审批结果为准</view>
     <view class="hr"></view>
