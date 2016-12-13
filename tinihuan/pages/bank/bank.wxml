@@ -1,0 +1,59 @@
+<!--pages/bank/bank.wxml-->
+<import src="../../template/step.wxml" />
+
+<view class="container">
+  <template is="step" data="{{index:3}}"></template>
+  <view class="tips">
+    <view>温馨提示：</view>
+    <view>1、通过审核后，资金将实时转入您填写的信用卡中；</view>
+    <view>2、到期还款日系统自动从您签约的储蓄卡中扣收。</view>
+  </view>
+  <view class="card">
+    <view class="title">
+      信用卡信息
+    </view>
+    <view class="main">
+       <view class="input-el">
+        <label>姓名</label>
+        <input type="text" placeholder="您的姓名" placeholder-class="placeholder"/>
+      </view>
+      <view class="input-el">
+        <label>银行</label>
+        <picker  bindchange="bindPickerChange" mode="selector" value="{{bankOptions.creditIndex}}" range="{{bankOptions.arr}}">
+          <view>
+            {{bankOptions.arr[bankOptions.creditIndex]}}
+            <text class="arrow">></text>
+          </view>
+        </picker>
+      </view>
+      <view class="input-el">
+        <label>卡号</label>
+        <input type="text" placeholder="本人信用卡卡号" placeholder-class="placeholder"/>
+      </view>
+    </view>
+  </view>
+  <view class="card">
+    <view class="title">
+      储蓄卡信息
+    </view>
+    <view class="main">
+       <view class="input-el">
+        <label>姓名</label>
+        <input type="text" placeholder="您的姓名" placeholder-class="placeholder"/>
+      </view>
+      <view class="input-el">
+        <label>银行</label>
+        <picker bindchange="bindPickerChange" mode="selector" value="{{bankOptions.index}}" range="{{bankOptions.arr}}">
+          <view>
+            {{bankOptions.arr[bankOptions.index]}}
+            <text class="arrow">></text>
+          </view>
+        </picker>
+      </view>
+      <view class="input-el">
+        <label>卡号</label>
+        <input type="text" placeholder="本人储蓄卡卡号" placeholder-class="placeholder"/>
+      </view>
+    </view>
+  </view>
+</view>

@@ -31,8 +31,8 @@ input{
   color: #999;
 }
 .container .tips{
-  padding: 20rpx;
-  font-size: .8rem;
+  padding: .8rem 1rem;
+  font-size: .7rem;
   border-bottom: 1rpx solid #ddd;
 }
 .hr{
@@ -69,6 +69,13 @@ input{
 }
 .input-el text{
   line-height: 1.4rem;
+}
+.input-el picker{
+  flex:1;
+  padding-left: .5rem;
+}
+.input-el picker view{
+  width: 100%;
 }
 
 .button-v{

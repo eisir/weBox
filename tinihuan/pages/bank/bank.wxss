@@ -1,0 +1,14 @@
+/* pages/bank/bank.wxss */
+.container .tips{
+  border:none;
+}
+
+.card{
+  margin: 0 1rem 1rem;
+  border-radius: 10rpx;
+  overflow: hidden;
+  background-color: #fff;
+}
+.card .title{
+  border-top: 8rpx solid #007aff;
+}

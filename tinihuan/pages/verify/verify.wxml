@@ -33,7 +33,7 @@
     
   </view>
   <view class="button-v">
-    <button bindtap="next">立即申请</button>
+    <button bindtap="next">下一步</button>
   </view>
 </view>
 <view
