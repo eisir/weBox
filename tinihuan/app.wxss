@@ -91,7 +91,9 @@ input{
   display: inline-block;
   width: .8rem;
 }
-
+.space_line{
+  height: .5rem;
+}
 
 /**
  * step style

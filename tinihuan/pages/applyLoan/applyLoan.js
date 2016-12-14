@@ -1,24 +1,7 @@
-// pages/bank/bank.js
+// pages/applyLoan/applyLoan.js
 Page({
   data:{
-    bankOptions:{
-      creditIndex:0,
-      index:0,
-      arr:[
-        "请选择银行",
-        "农业银行",
-        "工商银行",
-        "建设银行",
-        "招商银行",
-      ]
-    },
-    agreeParams:[0,0]
-  },
-  bindPickerChange: function(e) {
-    // console.log('picker发送选择改变，携带值为', e.detail.value)
-    this.setData({
-      'bankOptions.index': e.detail
-    })
+    agreeParams:[0]
   },
   choose:function(e){
     var _index= e.target.dataset.index

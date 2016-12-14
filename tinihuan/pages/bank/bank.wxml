@@ -56,4 +56,17 @@
       </view>
     </view>
   </view>
+  <view class="agreement-list">
+    <view class="agreement {{agreeParams[0]==0?'':'disagree'}}">
+      <text class="icon" bindtap="choose" data-index="0"></text>
+      <navigator url="">同意《个人征信查询及报送授权声明》</navigator>
+    </view>
+    <view class="agreement {{agreeParams[1]==0?'':'disagree'}}">
+      <text class="icon" bindtap="choose" data-index="1"></text>
+      <navigator url="">同意《拉卡拉信贷还款委托服务协议》</navigator>
+    </view>
+  </view>
+  <view class="button-v">
+    <button bindtap="next">下一步</button>
+  </view>
 </view>

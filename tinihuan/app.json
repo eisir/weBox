@@ -4,6 +4,7 @@
     "pages/verify/verify",
     "pages/personal/personal",
     "pages/bank/bank",
+    "pages/applyLoan/applyLoan",
     "pages/logs/logs"
   ],
   "window":{

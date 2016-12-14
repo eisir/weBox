@@ -41,7 +41,7 @@ Page({
   },
   next: function(){
     wx.navigateTo({
-      url: '../verify/verify'
+      url: '../applyLoan/applyLoan'
     })
   },
   onLoad: function () {

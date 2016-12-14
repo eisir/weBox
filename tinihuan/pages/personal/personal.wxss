@@ -6,9 +6,7 @@
 .input-el label{
   margin-right: 1rem;
 }
-.space_line{
-  height: .5rem;
-}
+
 .input-el:last-child{
   border:none;
 }

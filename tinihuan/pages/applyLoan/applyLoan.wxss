@@ -1,38 +1,29 @@
-/* pages/bank/bank.wxss */
-.container .tips{
-  border:none;
-}
-
-.card{
-  margin: 0 1rem 1rem;
-  border-radius: 10rpx;
-  overflow: hidden;
-  background-color: #fff;
-  border-top: 8rpx solid #007aff;
-}
-.card .title{
-  margin: 0 .5rem;
-  line-height: 2rem;
-  border-bottom: 1rpx dashed #007aff;
-  font-size: 1rem;
-}
-
+/* pages/applyLoan/applyLoan.wxss */
 .input-el{
   border: none;
   border-bottom: 1px solid #ddd;
-  padding-left: 0
-}
-.input-el:last-child{
-  border:none;
-}
-picker .arrow{
-  float: right;
-  font-family: vender;
 }
 
+.main .input-el:last-child{
+  border-bottom: none;
+}
+.main .input-el strong{
+  text-align: right;
+  flex:1;
+}
+.send-btn{
+  background-color: #007aff;
+  color: #fff;
+  border-radius: 6rpx;
+  padding: 0 1rem;
+  line-height: 1.5rem;
+}
+.h1{
+  padding: 0 1rem;
+}
 .agreement-list{
   width: 90.63%;
-  margin: 0 auto;
+  margin: 1rem auto 0;
 }
 .agreement .icon{
   display: inline-block;
@@ -52,7 +43,9 @@ picker .arrow{
 navigator {
   display: inline-block;
 }
+.container .tips{
+  border: none;
+}
 .button-v{
-  width: 90.63%;
-  margin: 0 auto;
+  margin-top: 0; 
 }
